@@ -1,19 +1,19 @@
-package ru.netology;
+package ru.netology.sqr;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SqrTest {
+class SQRServiceTest {
 
     @ParameterizedTest
     @CsvSource({"'calculateNumSqrLow0Up100', 0, 100, 0", "'calculateNumSqrLow99Up10000', 99, 10000, 90"})
     void caclulateNumSqr(String testName, int lowLimit, int UpLimit, int expected) {
 
-        Sqr calculate = new Sqr();
+        SQRService numSqr = new SQRService();
 
-        int actual = calculate.numSqr(lowLimit, UpLimit);
+        int actual = numSqr.calculate(lowLimit, UpLimit);
         assertEquals(expected, actual);
 
     }

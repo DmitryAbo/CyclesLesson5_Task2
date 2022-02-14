@@ -1,9 +1,8 @@
-package ru.netology;
+package ru.netology.sqr;
 
-public class Sqr {
-
-    public static int numSqr(int lowLimit, int UpLimit) {
-        int  numSqr = 0;                            //кол-во квадратов находящихся в заданных диапазонах
+public class SQRService {
+    public static int calculate(int lowLimit, int UpLimit) {
+        int numSqr = 0;                            //кол-во квадратов находящихся в заданных диапазонах
 
         for (int i = 10; i < 100; i++) {            // перебираем от 10 до 99
             int sqr = i * i;                        // вычисляем квадрат числа
