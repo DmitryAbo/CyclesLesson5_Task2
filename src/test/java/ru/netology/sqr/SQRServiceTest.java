@@ -10,7 +10,7 @@ class SQRServiceTest {
 
     @ParameterizedTest
     @CsvFileSource(resources = "/data.csv")
-    void caclulateNumSqr(String testName, int lowLimit, int UpLimit, int expected) {
+    void shouldCaclulateNumSqr(String testName, int lowLimit, int UpLimit, int expected) {
 
         SQRService numSqr = new SQRService();
 
